@@ -1,0 +1,226 @@
+doctype html
+html
+  head
+    title Store
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+    = csrf_meta_tags
+  body
+    .container
+      nav.navbar.navbar-inverse
+        .navbar-header
+          button.navbar-toggle data-target=".js-navbar-collapse" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#"  My Store
+        .collapse.navbar-collapse.js-navbar-collapse
+          ul.nav.navbar-nav
+            li.dropdown.mega-dropdown
+              a.dropdown-toggle data-toggle="dropdown" href="#" 
+                | Men
+                span.caret
+              ul.dropdown-menu.mega-dropdown-menu
+                li.col-sm-3
+                  ul
+                    li.dropdown-header Men Collection
+                  #menCollection.carousel.slide data-ride="carousel" 
+                    .carousel-inner
+                      .item.active
+                        a href="#" 
+                          img.img-responsive alt=("product 1") src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" /
+                        h4
+                          small Summer dress floral prints
+                        button.btn.btn-primary type="button"  49,99 €
+                        button.btn.btn-default href="#" type="button" 
+                          span.glyphicon.glyphicon-heart
+                          | Add to Wishlist
+                      /! End Item
+                      .item
+                        a href="#" 
+                          img.img-responsive alt=("product 2") src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" /
+                        h4
+                          small Gold sandals with shiny touch
+                        button.btn.btn-primary type="button"  9,99 €
+                        button.btn.btn-default href="#" type="button" 
+                          span.glyphicon.glyphicon-heart
+                          | Add to Wishlist
+                      /! End Item
+                      .item
+                        a href="#" 
+                          img.img-responsive alt=("product 3") src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" /
+                        h4
+                          small Denin jacket stamped
+                        button.btn.btn-primary type="button"  49,99 €
+                        button.btn.btn-default href="#" type="button" 
+                          span.glyphicon.glyphicon-heart
+                          | Add to Wishlist
+                      /! End Item
+                    /! End Carousel Inner
+                    /! Controls
+                    a.left.carousel-control data-slide="prev" href="#menCollection" role="button" 
+                      span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
+                      span.sr-only Previous
+                    a.right.carousel-control data-slide="next" href="#menCollection" role="button" 
+                      span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
+                      span.sr-only Next
+                  /! /.carousel
+                li.divider
+                li
+                  a href="#" 
+                    | View all Collection
+                    span.glyphicon.glyphicon-chevron-right.pull-right
+            li.col-sm-3
+              ul
+                li.dropdown-header Features
+                li
+                  a href="#"  Auto Carousel
+                li
+                  a href="#"  Carousel Control
+                li
+                  a href="#"  Left & Right Navigation
+                li
+                  a href="#"  Four Columns Grid
+                li.divider
+                li.dropdown-header Fonts
+                li
+                  a href="#"  Glyphicon
+                li
+                  a href="#"  Google Fonts
+            li.col-sm-3
+              ul
+                li.dropdown-header Plus
+                li
+                  a href="#"  Navbar Inverse
+                li
+                  a href="#"  Pull Right Elements
+                li
+                  a href="#"  Coloured Headers
+                li
+                  a href="#"  Primary Buttons & Default
+            li.col-sm-3
+              ul
+                li.dropdown-header Much more
+                li
+                  a href="#"  Easy to Customize
+                li
+                  a href="#"  Calls to action
+                li
+                  a href="#"  Custom Fonts
+                li
+                  a href="#"  Slide down on Hover
+        li.dropdown.mega-dropdown
+          a.dropdown-toggle data-toggle="dropdown" href="#" 
+            | Women
+            span.caret
+          ul.dropdown-menu.mega-dropdown-menu
+            li.col-sm-3
+              ul
+                li.dropdown-header Features
+                li
+                  a href="#"  Auto Carousel
+                li
+                  a href="#"  Carousel Control
+                li
+                  a href="#"  Left & Right Navigation
+                li
+                  a href="#"  Four Columns Grid
+                li.divider
+                li.dropdown-header Fonts
+                li
+                  a href="#"  Glyphicon
+                li
+                  a href="#"  Google Fonts
+            li.col-sm-3
+              ul
+                li.dropdown-header Plus
+                li
+                  a href="#"  Navbar Inverse
+                li
+                  a href="#"  Pull Right Elements
+                li
+                  a href="#"  Coloured Headers
+                li
+                  a href="#"  Primary Buttons & Default
+            li.col-sm-3
+              ul
+                li.dropdown-header Much more
+                li
+                  a href="#"  Easy to Customize
+                li
+                  a href="#"  Calls to action
+                li
+                  a href="#"  Custom Fonts
+                li
+                  a href="#"  Slide down on Hover
+            li.col-sm-3
+              ul
+                li.dropdown-header Women Collection
+              #womenCollection.carousel.slide data-ride="carousel" 
+                .carousel-inner
+                  .item.active
+                    a href="#" 
+                      img.img-responsive alt=("product 1") src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" /
+                    h4
+                      small Summer dress floral prints
+                    button.btn.btn-primary type="button"  49,99 €
+                    button.btn.btn-default href="#" type="button" 
+                      span.glyphicon.glyphicon-heart
+                      | Add to Wishlist
+                  /! End Item
+                  .item
+                    a href="#" 
+                      img.img-responsive alt=("product 2") src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" /
+                    h4
+                      small Gold sandals with shiny touch
+                    button.btn.btn-primary type="button"  9,99 €
+                    button.btn.btn-default href="#" type="button" 
+                      span.glyphicon.glyphicon-heart
+                      | Add to Wishlist
+                  /! End Item
+                  .item
+                    a href="#" 
+                      img.img-responsive alt=("product 3") src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" /
+                    h4
+                      small Denin jacket stamped
+                    button.btn.btn-primary type="button"  49,99 €
+                    button.btn.btn-default href="#" type="button" 
+                      span.glyphicon.glyphicon-heart
+                      | Add to Wishlist
+                  /! End Item
+                /! End Carousel Inner
+                /! Controls
+                a.left.carousel-control data-slide="prev" href="#womenCollection" role="button" 
+                  span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
+                  span.sr-only Previous
+                a.right.carousel-control data-slide="next" href="#womenCollection" role="button" 
+                  span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
+                  span.sr-only Next
+              /! /.carousel
+            li.divider
+            li
+              a href="#" 
+                | View all Collection
+                span.glyphicon.glyphicon-chevron-right.pull-right
+        li
+          a href="#"  Store locator
+        ul.nav.navbar-nav.navbar-right
+          li.dropdown
+            a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button" 
+              | My account
+              span.caret
+            ul.dropdown-menu role="menu" 
+              li
+                a href="#"  Action
+              li
+                a href="#"  Another action
+              li
+                a href="#"  Something else here
+              li.divider
+              li
+                a href="#"  Separated link
+          li
+            a href="#"  My cart (0) items
+    /! /.nav-collapse
+    | = yield %
