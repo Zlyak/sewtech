@@ -1,0 +1,116 @@
+<ul class="megamenu skyblue menu-in">
+	<li><%= link_to 'Home', root_path %></li>
+	<li class="active grid"><a  href="#">Pages</a>
+		<div class="megapanel">
+			<div class="row">
+				<div class="col1">
+					<div class="h_nav">
+						<h4>SUBMENU1</h4>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><%= link_to 'Men', product_catalog_path %></li>
+							<li><%= link_to 'Women', product_catalog_path %></li>
+							<li><%= link_to 'accessories', product_catalog_path %></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col1">
+					<div class="h_nav">
+						<h4>SUBMENU2</h4>
+						<ul>
+							<li><%= link_to 'trends', product_catalog_path %></li>
+							<li><%= link_to 'sale', product_catalog_path %></li>
+							<li><%= link_to 'style videos', product_catalog_path %></li>
+							<li><%= link_to 'accessories', product_catalog_path %></li>
+							<li><%= link_to 'kids', product_catalog_path %></li>
+							<li><%= link_to 'style videos', product_catalog_path %></li>
+						</ul>
+					</div>
+				</div>
+				<!--div class="col1 col5">
+					<iframe src="https://player.vimeo.com/video/10777111?color=ffffff&title=0&byline=0&portrait=0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div-->
+
+			</div>
+		</div>
+	</li>
+	<li ><a  href="404.html">Blog</a></li>
+	<li><%= link_to 'Products', product_catalog_path %>
+		<div class="megapanel">
+			<div class="row">
+				<div class=" col-nav">
+					<div class="h_nav">
+						<h4>BEST SELLING</h4>
+						<div class="sell">
+							<div class="men">
+								<%= link_to (image_tag("pi.jpg", alt:"")), product_catalog_path %>
+							</div>
+							<div class="men-in">
+								<h6>Lorem Ipsum</h6>
+								<span>$.60.00</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sell">
+							<div class="men">
+								<%= link_to (image_tag("pi11.jpg", alt:"")), product_catalog_path %>
+							</div>
+							<div class="men-in">
+								<h6> Dummy Text</h6>
+								<span>$.160.00</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sell">
+							<div class="men">
+								<%= link_to (image_tag("pi12.jpg", alt:"")), product_catalog_path %>
+							</div>
+							<div class="men-in">
+								<h6>Standard Chunk</h6>
+								<span>$.80.00</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class=" col-nav">
+					<div class="h_nav">
+						<h4>TOP RATE</h4>
+						<div class="sell">
+							<div class="men">
+							<%= link_to (image_tag("pi13.jpg", alt:"")), product_catalog_path %>
+							</div>
+							<div class="men-in">
+								<h6> Perspiciatis Und</h6>
+								<span>$.90.00</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sell">
+							<div class="men">
+								<%= link_to (image_tag("pi.jpg", alt:"")), product_catalog_path %>
+							</div>
+							<div class="men-in">
+								<h6>Veritatis Et</h6>
+								<span>$.60.00</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sell">
+							<div class="men">
+								<%= link_to (image_tag("pi11.jpg", alt:"")), product_catalog_path %>
+							</div>
+							<div class="men-in">
+								<h6>Lorem Ipsum</h6>
+								<span>$.100.00</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</li>
+	<li><a  href="contact.html">Contact</a></li>
+</ul>

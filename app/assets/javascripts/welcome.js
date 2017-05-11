@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-//= require_tree .
+
+//= require other/jquery.min
+//= require other/megamenu
+//= require other/easyResponsiveTabs
+//= require other/simpleCart.min

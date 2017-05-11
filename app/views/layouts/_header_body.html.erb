@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="logo">
+    <h1>
+      <%= link_to 'Amberegul', controller: 'welcome' %>
+    </h1>
+  </div>
+  <div class="top-nav">
+    <!-- start header menu -->
+    <%=render 'layouts/megamenu'%>
+    <!---->
+    <div class="search-in" >
+      <div class="search" >
+        <form action="search.html">
+          <input type="text" value="Keywords" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Keywords';}" class="text">
+          <input type="submit" value="SEARCH">
+        </form>
+        <div class="close-in">
+          <%= image_tag "close.png"%>
+        </div>
+      </div>
+      <div class="right"><button> </button></div>
+    </div>
+    <script type="text/javascript">
+      $('.search').hide();
+      $('button').click(function (){
+        $('.search').show();
+        $('.text').focus();
+        }
+      );
+      $('.close-in').click(function(){
+        $('.search').hide();
+      });
+    </script>
+    <!---->
+    <div class="cart box_1">
+      <h3>
+        <div class="total">
+          <span class="simpleCart_total">
+          </span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+          <%=link_to (image_tag "cart.png"), checkout_checkout_path%>
+      </h3>
+      <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+      <div class="clearfix"> </div>
+    </div>
+    <!---->
+  </div>
+  <div class="clearfix"> </div>
+</div>
